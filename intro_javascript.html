@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head lang="es">
+		<meta charset="utf-8"/>
+		<title>JavaScript intro</title>
+
+		<script>
+		//esta es una declacion
+			/*JAVASCRIPT LA ETIQUETA*/
+			/*
+			var saludo ="hola a salados(otravez)";
+			document.write(saludo);
+           var currentYear = 2014;
+           document.write("<div>"+currentYear+"</div>");
+           document.write('<h1>Hola a Todos </h1>');
+           
+           document.write(5*3);
+           document.write("<h1>"+5*3+"<h1>");
+           
+           var nombre = prompt("escribe tu nombre");
+           document.write(nombre);
+           */
+          /*forma 1 de declar funciones */
+          function suma(a,b){
+          	var respuesta =a + b;
+          	
+          	return respuesta;
+          }
+           
+         /*var calculo = suma(1,3.5);
+         document.write(calculo); */
+         
+         /*forma 2 declar funciones */
+        var multi = function(a,b){
+        	var respuesta = a*b;
+        	
+        	return respuesta;
+        };
+        /*funciones 3 declarar funciones */
+       function operacion(miFuncion, a, b){
+       	return miFuncion(a,b);
+       }
+         var calculo = operacion(suma, 3, 1);
+         document.write(calculo);
+         /*
+          
+         var nombre = prompt("escribe tu nombre");
+         var Domicilio = prompt("escribe tu Domicilio");
+         var Telefono = prompt("escribe tu Telefono");
+         document.write("<div>nombre:"+nombre+"</dv>");
+         document.write("<div>Domi:"+Domicilio+"</dv>");
+         document.write("<div>tel:"+Telefono+"</dv>");
+         */
+        //deckaracion un objecto de javascript
+        var persona ={
+        	nombre:"Eduardo",
+        	edad:27,
+        	saludar:function(){
+        		document.write("hola a todos!"+this.nombre);
+        	}
+        };
+        persona.curso = "html5";
+        document.write(persona.nombre);
+           persona.saludar(); 
+		</script>
+	</head>
+	<body></body>
+</html>

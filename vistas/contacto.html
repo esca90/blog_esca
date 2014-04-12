@@ -1,0 +1,36 @@
+{%extends "layout.html"%}
+
+{%block titulo%}
+  Contacto
+{% endblock %}
+{%block contenido %}
+<h2>CONTACTAMOS!!</h2>
+<form action="/contactar" method="post">
+	                    <div>
+	 					<label>nombre:</label>
+	 				   <input id="suscribir-nombre" type="text" name="nombre" required placeholder="Tu nombre aqui"/> <!---ES EL BOTON PARA ENVIAR- y hace obligactorio para llenar-->
+	 				   </div>
+	 				   <div>
+	 				   <label for="suscribir-email">email:</label>
+	 				   <input id="suscribir-email" type="email" name="email"/>
+	 				   </div>
+	 				   <div>
+	 				   <label for="suscribir-website">website:</label>
+	 				   <input id="suscribir-website" type="text" name="url"/>
+	 				   </div>
+	 				   <div>
+	 				   <label for="suscribir-edad">Edad:</label>
+	 				   <input id="suscribir-edad" type="range" name="edad" min="18" max="193" />
+	 				   
+	 				   </div>
+	 				   <div>
+	 				   <label for="suscribir-comentario">Comentario:</label>
+	 				   <textarea name="comentario" required> </textarea>
+	 				   </div>
+	 				   <input type="submit" value="enviar" />
+	 				</form>
+
+
+
+
+{% endblock %}
