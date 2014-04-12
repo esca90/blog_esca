@@ -1,0 +1,24 @@
+    1  help
+    2  cd "\intel\ESC\blog\blog"
+    3  pwd
+    4  ll
+    5  ls -la
+    6  git config --global user.name "eduardo Sanchez"
+    7  git config --global user.email "nzgn36@hotmail.com"
+    8  git init 
+    9  ls
+   10  ls -la
+   11  cd .git
+   12  ls
+   13  ls -la
+   14  cd ..
+   15  pwd
+   16  git add .
+   17  history
+   18  git status
+   19  git commit -m "subo blog primera vez"
+   20  git commit -m "subo blog primera vez"
+   21  git remote add origin https://github.com/esca90/blog_esca.git
+   22  git push origin master
+   23  history
+   24  history >>historyclas44.txt
